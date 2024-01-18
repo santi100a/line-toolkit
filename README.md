@@ -1,41 +1,5 @@
-# Template for my NPM libraries
+# Library Name
 
-Hello, everyone! This is a template repo for my libraries.
-You'll find a readme template inside this file.
-
-In order for the CI workflow's publishing jobs to execute successfully, you must have two
-Actions secrets set up -- `NPM_AUTH_TOKEN` and `GPR_AUTH_TOKEN`.
-
-You might want to check the [YAML Actions workflow](.github/workflows/ci.yml) for hints
-and information you may want or need to know.
-
-## Template features
-
-- License (both template contents and code built from it): MIT.
-- Code of conduct: adapted from the Contributor Covenant.
-- Package manager: Yarn 1.22.19.
-- Automatic testing: Jest.
-- TypeScript 4.9.5 for built-in type definitions and support for compiling to ES3.
-- ESLint and Prettier.
-- Security policy and contribution guidelines.
-
-- Self-made scripts for verification of package.json and creation of an ESM wrapper
-  around TypeScript's CommonJS output to allow for usage within both CJS and ESM projects.
-
-## Your todos as a user of this template
-
-- [ ] Change all placeholders all over different files.
-- [ ] Fill this README template.
-
-<!-- START README TEMPLATE -->
-<!-- 
-* Make sure to replace ALL placeholders.
-! The readme will be broken otherwise!
--->
-
-<!-- # Library Name -->
-<!-- Badges -->
-<!-- Example: 
 [![Build Status][workflow badge]][repo actions]
 [![npm homepage][npm badge]][npm home]
 [![GitHub stars][stars badge]][repo url]
@@ -52,35 +16,27 @@ and information you may want or need to know.
 [repo actions]: https://github.com/<author>/<repo>/actions
 [repo url]: https://github.com/<author>/<repo>
 [bundlephobia url]: https://bundlephobia.com/package/@<author>/<repo>@latest
--->
 
-<!-- Bullet points -->
-<!-- Example:
-- 🚀 Lightweight and fast[^](#disclaimers)
-- 👴 ES3-compliant[*](#disclaimers)
+- 🚀 Lightweight and fast
+- 👴 ES3-compliant
 - 💻 Portable between the browser and Node.js
--->
 
-<!-- ## What's this? -->
-<!-- Description -->
+## What's this?
 
-<!-- Mentions, inspirations -->
+This is a library for common tasks regarding lines, like finding its slope or y-intercept.
 
-<!-- ## Installation -->
-<!-- Installation steps and/or commands -->
-<!-- Example:
+## Installation
+
 - Via NPM: `npm install @<author>/<repo>`
 - Via Yarn: `yarn add @<author>/<repo>`
 - Via PNPM: `pnpm install @<author>/<repo>`
 -->
 
-<!-- ## API -->
-<!--
-* If a class/function/variable is deprecated, you must cross it out by wrapping the 
-* `<class/function/variable prototype/definition/type def>;` with tildes, like this:
-* ~~`<class/function/variable prototype/definition/type def>;`~~ (deprecated [since <version>])
+# API
 
-- `<class/function/variable prototype/definition/type def>;` ([since <version if not first version>]) ([deprecated [since <version>]]) <description>
+
+
+- `new Point(x: number, y: number);` A point in Cartesian space.
    | Name       |     Type    | Description        | Optional? | Default                                |
    |------------|-------------|--------------------|-----------|----------------------------------------|
    |<param name>|<param type> |<param description> | <Yes/No>  | <N/A if not optional, else the default>|
